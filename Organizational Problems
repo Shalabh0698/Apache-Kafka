@@ -1,0 +1,34 @@
+if you have 4 source systems and 6 targeted systems, you need to write 24 integrations
+Each integration comes with difficulties around
+  a. Protocol - How the data is transported (TCP, HTTP, REST, FTP, JDBC...)
+  b. Data Format - how the data is parsed (Binary, CSV, JSON, Avro, Protobuf..)
+  c. Data Schema & Evolution - how the data is shaped and may change.
+Each Source system will have an increased load from the connections.
+
+
+All these problems can be handled by Apache Kafka ( A distributed streaming platform).
+Why Apache Kafka?
+  a. Created by LinkedIN, now open-source project mainly mainted by confluent, IBM, Cloudera
+  b. Distributed, resilient architecture, fault tolerant.
+  c. Horizontal Scalability.
+    i. Can Scale to 100s of brokers.
+    ii. Can scale to millions of message per second.
+ d. High performance (latency of less than 10ms) - real time.
+ e. Used by the 2000+ firms, 80% of the Fortune 100.
+
+
+Apache Kafka: Use Cases
+  a. Messaging System
+  b. Activity Tracking.
+  c. Gather metrics from many different locations.
+  d. Application logs Gathering
+  e. Stream processing (with the Kafka Streams API for example).
+  f. De-coupling of system dependencies.
+  g. Integration with Spark, Flink, Storm, Hadoop, and may other Big Data technologies.
+
+Instances:
+Netflix uses Kafka to apply recommendations in real - time while you're watching TV shows
+
+Uber uses kafka to gather user, taxi and trip data in real-time to compute and forecast demand, and compute surge pricing in real-time.
+
+LinkedIn uses Kafka to prevent spam, collect user interactions to make better connection recommendations in real time.
